@@ -49,24 +49,94 @@
                             时间预估：
                         </h3>
                         <p>
-                            “填写约需X分钟，感谢您的耐心配合。”
+                            “填写约需1分钟，感谢您的耐心配合。”
                         </p>
+                        <form action="#" method="get">
+                            <p>
+                                <label for="name">姓名（可填昵称）</label>
+                                <input type="text" id="name" name="name" placehouler="怎么称呼你？" required>
+                            </p>
+                            <p>
+                                <label for="mail">邮箱</label>
+                                <input type="email" id="mail" name="mail" required>
+                            </p>
+                             <p>
+                                <label for="age">请输入您的年龄：</label>
+                                <input type="number" id="age" name="age min="0" max="150" step="1" placeholder="18" required>
+                             </p>
+
+
+                            <h4>
+                                您的性别为？
+                            </h4>
+                            <p>
+                                <input type="radio" id="male" name="gender" value="male" checked>
+                                <label for="male">男</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">女</label>
+                                <input type="radio" id="secret" name="gender" value="secret">
+                                <label for="secret">保密</label>       
+                            </p>
+
+                            <h4>
+                                您最近以来游玩了哪些类型的游戏？
+                            </h4>
+                            <p>
+                                
+                                <input type="checkbox" id="type1" name="topic" value="l"required >
+                                <label for="type1">竞技类游戏</label>
+                                <input type="checkbox" id="type2" name="topic" value="2" >
+                                <label for="type2">单机冒险类游戏</label>
+                                <input type="checkbox" id="type3" name="topic" value="3" >
+                                <label for="type3">沙盒类游戏</label>
+                                <input type="checkbox" id="type4" name="topic" value="4" >
+                                <label for="type4">塔防类游戏</label>
+                                <input type="checkbox" id="type5" name="topic" value="5" >
+                                <label for="type5">休闲游戏</label>
+                                <input type="checkbox" id="type6" name="topic" value="6" >
+                                <label for="type6">其他</label>
+
+
+
+                            </p>
+                            <h4>
+                                您一周内的游戏游玩时长为？
+                            </h4>
+
+                            <p>
+                                <input type="radio" id="type1" name="time" value="l"required >
+                                <label for="type1">没有游玩</label>
+                                <input type="radio" id="type2" name="time" value="2" >
+                                <label for="type2">1h以内</label>
+                                <input type="radio" id="type3" name="time" value="3" >
+                                <label for="type3">1h~3h内</label>
+                                <input type="radio" id="type4" name="time" value="4" >
+                                <label for="type4">3h~6h内</label>
+                                <input type="radio" id="type5" name="time" value="5" >
+                                <label for="type5">6h以上</label>
+                            </p>
+
+                            <p>
+                                <label for="advice">您认为游戏对您的生活有好处还是坏处？能具体说说吗？</label><br>
+                                <textarea id="advice" name="advice" rows="4" maxlehgth="200" placeholder="说点什么"></textarea>
+                            </p>
+                            <p>
+                                <button type="submit">提交反馈</button>
+                            </p>
                     </section>
 
                     <section id="form">
-                        <h2>
-                            反馈表单
-                        </h2>
-
-                        <p>
-                            （表单下一步填在这里）
-                        </p>
-
+                        <h2>用户反馈列表</h2>
+                        <table border="1">
+                        <tr><th>ID</th><th>评价</th><th>反馈内容</th><th>状态</th></tr>
+                        <tr><td>1</td><td>好评</td><td>问卷体验差</td><td>已读</td></tr>
+                        <tr><td>2</td><td>差评</td><td>问卷体验好</td><td>未读</td></tr>
+</table>
                     </section>
                 </main>
                 <footer>
                     <p>
-                        软件开发综合实践 课程演示案例
+                        叠甲：内容纯属娱乐，没有引战概念。
                     </p>
                 </footer>
     </body>
